@@ -38,9 +38,6 @@ export default defineNuxtConfig({
       posthogHost: 'https://us.i.posthog.com',
       posthogDefaults: '2026-01-30',
 
-      // Email subscribe endpoint — replace with your form service URL
-      // (e.g. Buttondown, ConvertKit, Mailchimp, or a custom serverless function)
-      subscribeEndpoint: '/api/subscribe',
     },
   },
 })

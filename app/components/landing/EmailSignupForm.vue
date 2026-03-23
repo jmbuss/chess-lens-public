@@ -1,34 +1,19 @@
 <script setup lang="ts">
-import { Loader2, CheckCircle2, ArrowRight } from 'lucide-vue-next'
-
-const config = useRuntimeConfig()
+import { CheckCircle2, ArrowRight } from 'lucide-vue-next'
 
 const email = ref('')
-const status = ref<'idle' | 'loading' | 'success' | 'error'>('idle')
-const errorMessage = ref('')
+const status = ref<'idle' | 'success'>('idle')
 
-async function handleSubmit() {
-  if (!email.value || status.value === 'loading') return
+function handleSubmit() {
+  if (!email.value) return
 
-  status.value = 'loading'
-  errorMessage.value = ''
+  const { $posthog } = useNuxtApp()
+  const ph = ($posthog as any)()
+  ph?.identify(email.value, { email: email.value })
+  ph?.capture('waitlist_signup')
 
-  try {
-    await $fetch(config.public.subscribeEndpoint as string, {
-      method: 'POST',
-      body: { email: email.value },
-    })
-    status.value = 'success'
-    email.value = ''
-
-    try {
-      const { $posthog } = useNuxtApp()
-      ;($posthog as any)?.capture('waitlist_signup')
-    } catch {}
-  } catch {
-    status.value = 'error'
-    errorMessage.value = 'Something went wrong. Please try again.'
-  }
+  status.value = 'success'
+  email.value = ''
 }
 </script>
 
@@ -45,15 +30,11 @@ async function handleSubmit() {
       />
       <Button
         type="submit"
-        :disabled="status === 'loading'"
         size="lg"
         class="h-11 px-5 shrink-0 cursor-pointer"
       >
-        <Loader2 v-if="status === 'loading'" class="size-4 animate-spin" />
-        <template v-else>
-          Get early access
-          <ArrowRight class="size-4" />
-        </template>
+        Get early access
+        <ArrowRight class="size-4" />
       </Button>
     </form>
 
@@ -62,6 +43,5 @@ async function handleSubmit() {
       <span class="text-sm font-medium">You're on the list! We'll be in touch.</span>
     </div>
 
-    <p v-if="status === 'error'" class="mt-2 text-sm text-destructive">{{ errorMessage }}</p>
   </div>
 </template>
