@@ -1,36 +1,26 @@
 <script setup lang="ts">
-import { Target, TrendingUp, Download, Filter, BookOpen, Share2 } from 'lucide-vue-next'
+import { Clock, TrendingUp, Globe, BookOpen } from 'lucide-vue-next'
 
 const roadmapItems = [
   {
-    icon: Target,
-    title: 'Similar Position Search',
-    description: 'Find structurally similar positions across your game history. Discover recurring themes and patterns you never noticed.',
+    icon: Globe,
+    title: 'Lichess Integration',
+    description: 'Sync games from Lichess alongside Chess.com for a complete picture of your play across platforms.',
+  },
+  {
+    icon: Clock,
+    title: 'Time Management Insights',
+    description: 'Understand how you use your clock. See where you spend the most time, where you move too fast, and how time pressure affects your accuracy.',
   },
   {
     icon: TrendingUp,
-    title: 'Mistake Trend Analysis',
-    description: 'Track how your mistake patterns change over time. Are you blundering less? Are your endgames improving? See progress backed by data.',
-  },
-  {
-    icon: Download,
-    title: 'Lichess Integration',
-    description: 'Sync games from Lichess alongside Chess.com for a complete picture of your play.',
-  },
-  {
-    icon: Filter,
-    title: 'Advanced Filtering & Sorting',
-    description: 'Filter your game library by opening, result, time control, rating range, and more.',
+    title: 'Opening Analysis',
+    description: 'See how you handle your openings — where you deviate from theory, which lines give you the best results, and what to study next.',
   },
   {
     icon: BookOpen,
     title: 'Opening Repertoire Tracking',
-    description: 'See how your actual play maps to your intended repertoire and where you deviate.',
-  },
-  {
-    icon: Share2,
-    title: 'Export & Sharing',
-    description: 'Export annotated PGNs and share analysis with coaches or study partners.',
+    description: 'Map your actual games against your intended repertoire to see where you deviate and how often.',
   },
 ]
 </script>
@@ -43,17 +33,17 @@ const roadmapItems = [
         <h2 class="text-3xl md:text-5xl font-bold tracking-tight">What's coming next</h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div
           v-for="(item, i) in roadmapItems"
           :key="i"
           data-reveal
-          :data-reveal-delay="(i % 3) + 1"
-          class="p-5 rounded-xl border border-white/5 bg-white/[0.02]"
+          :data-reveal-delay="(i % 4) + 1"
+          class="p-5 rounded-xl border border-black/5 bg-black/[0.02]"
         >
           <div class="flex items-center gap-3 mb-3">
             <component :is="item.icon" class="size-5 text-muted-foreground" />
-            <Badge variant="secondary" class="text-[10px] bg-white/5 text-muted-foreground border border-white/10">
+            <Badge variant="secondary" class="text-[10px] bg-black/5 text-muted-foreground border border-black/10">
               Coming soon
             </Badge>
           </div>

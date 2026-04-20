@@ -26,7 +26,7 @@ function handleSubmit() {
         placeholder="you@email.com"
         required
         aria-label="Email address"
-        class="flex-1 bg-white/5 border-white/10 text-white placeholder:text-white/30 h-11"
+        class="flex-1 bg-black/[0.03] border-black/10 text-foreground placeholder:text-muted-foreground h-11"
       />
       <Button
         type="submit"

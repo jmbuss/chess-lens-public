@@ -3,14 +3,14 @@ useScrollReveal()
 
 useSeoMeta({
   title: 'Chess Lens — See Your Chess Differently',
-  description: 'A desktop chess analysis workstation that makes your games searchable and deeply analyzed. Engine precision meets human-like move prediction — find patterns, understand weaknesses, and actually improve.',
+  description: 'A desktop analysis workstation that learns your decisions, not just your positions. Understand your habits, surface recurring mistakes, and make every game searchable—so improvement becomes obvious.',
   ogTitle: 'Chess Lens — See Your Chess Differently',
-  ogDescription: 'A desktop chess analysis workstation that makes your games searchable and deeply analyzed. Engine precision meets human-like move prediction.',
+  ogDescription: 'A desktop analysis workstation that learns your decisions, not just your positions. Understand habits, recurring mistakes, and searchable games—so improvement becomes obvious.',
   ogType: 'website',
   ogSiteName: 'Chess Lens',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Chess Lens — See Your Chess Differently',
-  twitterDescription: 'A desktop chess analysis workstation that makes your games searchable and deeply analyzed.',
+  twitterDescription: 'Learn your decisions, not just your positions. Habits, recurring mistakes, searchable games—so improvement becomes obvious.',
 })
 </script>
 

@@ -10,7 +10,7 @@ import { Github, Mail } from 'lucide-vue-next'
         <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Built by a chess player,<br />for chess players</h2>
       </div>
 
-      <div data-reveal data-reveal-delay="1" class="p-8 rounded-2xl border border-white/5 bg-white/[0.02]">
+      <div data-reveal data-reveal-delay="1" class="p-8 rounded-2xl border border-black/5 bg-black/[0.02]">
         <div class="flex flex-col sm:flex-row items-start gap-6">
           <!-- Avatar placeholder -->
           <div class="size-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
@@ -34,14 +34,14 @@ import { Github, Mail } from 'lucide-vue-next'
                 href="https://github.com/jmbuss"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-white/5 bg-white/[0.03] hover:bg-white/[0.06] transition-colors text-sm text-muted-foreground hover:text-foreground"
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-black/5 bg-black/[0.03] hover:bg-black/[0.06] transition-colors text-sm text-muted-foreground hover:text-foreground"
               >
                 <Github class="size-4" />
                 GitHub
               </a>
               <a
                 href="mailto:bussterjason@gmail.com"
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-white/5 bg-white/[0.03] hover:bg-white/[0.06] transition-colors text-sm text-muted-foreground hover:text-foreground"
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-black/5 bg-black/[0.03] hover:bg-black/[0.06] transition-colors text-sm text-muted-foreground hover:text-foreground"
               >
                 <Mail class="size-4" />
                 bussterjason@gmail.com
