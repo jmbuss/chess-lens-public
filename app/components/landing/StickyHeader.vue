@@ -23,22 +23,23 @@ onUnmounted(() => {
     ]"
   >
     <nav class="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 text-foreground font-semibold text-lg">
+      <NuxtLink to="/" class="flex items-center gap-2 text-foreground font-semibold text-lg">
         <img src="/favicon.png" alt="Chess Lens" class="size-5" />
         Chess Lens
-      </a>
+      </NuxtLink>
 
       <div class="hidden md:flex items-center gap-8">
         <a href="#features" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
         <a href="#roadmap" class="text-sm text-muted-foreground hover:text-foreground transition-colors">Roadmap</a>
-        <a href="#about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
+        <NuxtLink to="/faq" class="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</NuxtLink>
+        <NuxtLink to="/about" class="text-sm text-muted-foreground hover:text-foreground transition-colors">About</NuxtLink>
       </div>
 
-      <a href="#get-early-access">
+      <NuxtLink to="/download">
         <Button size="sm">
-          Get Early Access
+          Download
         </Button>
-      </a>
+      </NuxtLink>
     </nav>
   </header>
 </template>

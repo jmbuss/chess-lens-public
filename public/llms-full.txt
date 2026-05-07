@@ -1,0 +1,231 @@
+Chess Lens — Full Content Index
+================================
+This file contains the complete text content of the Chess Lens marketing site for LLM ingestion.
+URL: https://chesslens.org
+Last updated: 2026-05-01
+
+---
+
+## Home Page (https://chesslens.org)
+
+### Hero
+
+See your chess through the lens of how you actually play.
+
+A desktop analysis workstation that learns your decisions, not just your positions. It understands your habits, surfaces recurring mistakes, and makes every game searchable—so improvement becomes obvious.
+
+Download Chess Lens — Free for macOS and Windows. No account required.
+
+---
+
+### Problem Section: Your games are data. Start using them like it.
+
+**Eval bars don't teach you how you think**
+Engines tell you what the best move was. They don't tell you why you missed it—or what pattern led you there. Chess Lens goes beyond evaluation, surfacing the recurring decisions and blind spots in your play.
+
+**You can't search your own games**
+You've played hundreds—maybe thousands—of games. But you can't answer simple questions:
+Where do I actually lose? What kinds of mistakes do I repeat? How do I perform in this structure or opening?
+Chess Lens turns your games into a searchable dataset—so patterns aren't buried, they're obvious.
+
+**Analysis tools weren't built for real study**
+Most tools live in the browser. They're fragmented, slow, and built around single games—not long-term improvement. Chess Lens is a dedicated desktop workstation, designed for focused analysis across your entire history—not one tab at a time.
+
+**Your games are scattered. Your mistakes are lost.**
+Games on one site. Analysis on another. Insights nowhere. There's no system tracking how you play over time—so the same mistakes repeat, unnoticed. Chess Lens brings everything together, organizing your games and surfacing the patterns you actually need to fix.
+
+Chess Lens is a local-first analysis workstation that learns how you play. It doesn't just evaluate positions—it tracks your decisions across games, finds recurring mistake patterns, and makes your chess fully searchable. So instead of reviewing games in isolation, you see the bigger picture—and improve with intent.
+
+---
+
+### Features: Everything you need to improve
+
+**Recurring Patterns — Find What's Holding You Back**
+Chess Lens groups similar positions from your recent games and surfaces recurring mistake patterns. See which types of positions cause you trouble, how often they appear, and the average evaluation loss. Drill into any pattern to walk through every instance across your games—and finally answer the question: what should I actually work on?
+
+**Deep Game Analysis**
+Walk through your games move-by-move with full Stockfish and Maia analysis. See your move vs. the best move with annotation arrows, an interactive eval curve with Maia overlays for ratings 1100–1900, position-level mistake probability, human move distributions, and full NAG breakdowns—blunders, misses, inaccuracies, brilliant moves, and more.
+
+**Engine + Human Fusion**: Stockfish for objective evaluation, Maia for human-like predictions at ratings 1100–1900. See where your thinking diverges from both.
+
+**Automated Analysis**: One-click deep analysis using your own hardware—free and fully offline. Every move classified with mistake probability and NAG annotations.
+
+**Interactive Eval Chart**: Evaluation over the entire game with Maia model overlays for ratings 1100–1900. Easily spot where human players—and you—go wrong.
+
+**Games Library**: All your games in a searchable, sortable, filterable data table. Filter by opponent, rating, result, opening, time control, and more. Favorite games for easy access.
+
+**Chess.com Sync**: Connect your Chess.com account and sync games automatically. Lichess integration coming soon.
+
+**Resizable Workspace**: PGN viewer, board, engine lines, and analysis tabs in resizable panels you can arrange to your preference.
+
+**Variation Explorer**: Play out alternative lines directly on the board. Variations are persisted and analyzed, building a full game tree you can review later.
+
+**PGN & FEN Export**: Export a full game PGN or copy any position as FEN for sharing with coaches, study partners, or other tools.
+
+**Local-First & Offline**: Everything on your machine. No cloud dependency, no latency, no subscription to access your own analysis.
+
+**Native Desktop App**: A real desktop application built for macOS and Windows. Keyboard navigation, dark mode, and a purpose-built UI for focused analysis.
+
+---
+
+### How It Works
+
+**Step 1: Connect**
+Link your Chess.com account and sync your games. Everything stored locally on your machine.
+
+**Step 2: Analyze**
+Run automated analysis powered by Stockfish + Maia on any game. Every move classified and annotated.
+
+**Step 3: Search & Improve**
+Query your games, browse your positions library, and find the patterns holding you back.
+
+---
+
+### Roadmap
+
+**Lichess Integration** (Coming soon): Sync games from Lichess alongside Chess.com for a complete picture of your play across platforms.
+
+**Time Management Insights** (Coming soon): Understand how you use your clock. See where you spend the most time, where you move too fast, and how time pressure affects your accuracy.
+
+**Opening Analysis** (Coming soon): See how you handle your openings—where you deviate from theory, which lines give you the best results, and what to study next.
+
+**Opening Repertoire Tracking** (Coming soon): Map your actual games against your intended repertoire to see where you deviate and how often.
+
+---
+
+### FAQ
+
+**What is Chess Lens?**
+Chess Lens is a free, local-first desktop chess analysis workstation for macOS and Windows. Unlike browser-based tools that review one game at a time, Chess Lens analyzes your entire game history to surface recurring mistake patterns, makes every game fully searchable, and shows you how you actually think—not just what the best move was. It runs entirely on your machine using Stockfish and Maia engines.
+
+**How do I download Chess Lens?**
+Download Chess Lens from chesslens.org/download. You can download directly for macOS (.dmg) or Windows (.exe installer). Once downloaded, open the installer and follow the on-screen instructions. No account or internet connection is required to run the app after installation.
+
+**Which operating systems are supported?**
+Chess Lens supports macOS (10.15 Catalina and later) and Windows (Windows 10 and later, 64-bit). Linux support is not currently planned. Make sure your machine has at least 4 GB of RAM and a modern multi-core CPU for the best analysis performance.
+
+**Is Chess Lens free?**
+Yes, Chess Lens is completely free. There is no subscription, no paywall, and no feature limits. Analysis runs entirely on your own hardware using locally installed engines—there are no cloud computing costs to pass on.
+
+**Do I need an internet connection to use Chess Lens?**
+An internet connection is only needed to sync games from Chess.com. All analysis—Stockfish evaluation, Maia predictions, pattern detection—runs entirely offline on your machine. Once your games are synced, you can analyze, study, and browse your library without any network connection.
+
+**How do I update Chess Lens to the latest version?**
+Chess Lens will notify you when a new version is available. You can also check chesslens.org/download or the GitHub releases page at any time to download the latest version manually. Updates are standalone installers—just download and run the new version.
+
+**Are the macOS and Windows builds notarized or code-signed?**
+Yes. The macOS build is code-signed and notarized by Apple, so it passes Gatekeeper without any "unidentified developer" warnings. The Windows build is code-signed as well. If your system still shows a warning on first launch, right-click the installer and choose Open.
+
+**Which chess engines does Chess Lens use?**
+Chess Lens uses two engines: Stockfish (the strongest open-source chess engine) for objective position evaluation and best-move analysis, and Maia (developed at Cornell and the University of Toronto) for human-like move predictions. Maia models are available for ratings 1100 through 1900, letting you see not just what the best move was but how likely a player at your level was to find it.
+
+**What are Maia engines and why does Chess Lens use them?**
+Maia is a series of chess engines trained to predict how human players at specific rating levels actually move—rather than what the objectively best move is. When Chess Lens overlays Maia on your eval curve, you can see the positions where a 1500-rated player almost certainly plays the wrong move, helping you understand which of your mistakes are genuinely hard and which ones are avoidable patterns in your own play.
+
+**How does Chess Lens connect to Chess.com?**
+You enter your Chess.com username in the app and Chess Lens uses the Chess.com public API to sync your game history. No password is required. Games are downloaded and stored locally on your machine. Lichess integration is on the roadmap.
+
+**Where are my games and analysis stored?**
+Everything—your synced games, analysis results, saved variations, and pattern data—is stored locally in a database on your own machine. Nothing is sent to any external server. You have full control over your data.
+
+**How do recurring mistake patterns work?**
+After analyzing your games, Chess Lens groups positions where you made a significant mistake by the type of position and the underlying tactical or strategic theme (e.g. loose pieces, king safety, calculation failures). Each pattern shows how often it appears, your average centipawn loss, and links to every game instance—so you can drill into exactly where and why you go wrong in those structures.
+
+**How is Chess Lens different from Chess.com or Lichess game review?**
+Chess.com and Lichess analyze one game at a time and show you engine evaluation. Chess Lens analyzes your entire history and answers the bigger question: what patterns of mistakes keep repeating across your games? It also uses Maia to show human-level mistake probability (not just engine evaluation), groups similar positions into recurring themes, and makes your whole game library searchable and filterable.
+
+**How is Chess Lens different from ChessBase?**
+ChessBase is a powerful professional tool, but it requires manual tagging, curation, and significant setup to get insights from your own games. Chess Lens does that work automatically—it imports, analyzes, and groups your games into recurring patterns without any manual database management. It is also free and designed specifically for self-improvement rather than professional game preparation.
+
+---
+
+### Comparison
+
+**Chess Lens vs Lichess & Chess.com Analysis**
+Not just evaluation—understanding how you play. Traditional analysis shows you the best move. Chess Lens goes further—combining Stockfish with Maia to model how players at your level actually think. Instead of isolated game reviews, it analyzes your entire history—making your games searchable and automatically surfacing recurring mistake patterns.
+
+**Chess Lens vs Online Tools**
+Built for real analysis, not browser tabs. Most tools are designed for quick, single-game review. Chess Lens is a desktop, local-first workstation built for deep study. No latency, no engine limits, no subscriptions—just a fast, persistent environment where your analysis, games, and insights all live together.
+
+**Chess Lens vs ChessBase**
+Powerful without the overhead. Traditional database tools require manual tagging, curation, and setup. Chess Lens does that work for you—automatically grouping positions into recurring patterns and highlighting what you should improve, without needing to manage a database.
+
+**Chess Lens vs Generic Engines**
+Not just what's best—what's realistic. Engines tell you what the best move is. Chess Lens shows how likely you were to find it. By using Maia models, it assigns mistake probability to every move and overlays human-like evaluations—so you can see not just where you blundered, but which mistakes are actually holding you back at your level.
+
+---
+
+### About
+
+Chess Lens is built by Jason Buss — a software engineer and chess enthusiast who got tired of existing tools not answering the questions that actually matter for improvement. This is a passion project born from real frustration with the gap between what chess analysis tools offer and what players actually need.
+
+Contact: bussterjason@gmail.com
+GitHub: https://github.com/jmbuss
+
+---
+
+## Download Page (https://chesslens.org/download)
+
+Download Chess Lens — Free Chess Analysis App for macOS and Windows.
+
+Free desktop chess analysis for macOS and Windows. No account required. Runs entirely on your machine.
+
+**macOS**: macOS 10.15 Catalina or later. Intel & Apple Silicon (Universal). Code-signed and notarized.
+**Windows**: Windows 10 or later (64-bit). x64 architecture. Code-signed.
+
+System requirements:
+- macOS: 10.15 Catalina+, Intel or Apple Silicon, 4 GB RAM min (8 GB recommended), 500 MB disk
+- Windows: Windows 10+ (64-bit), x64, 4 GB RAM min (8 GB recommended), 500 MB disk
+
+Download URLs:
+- macOS: https://chesslens.org/download/mac
+- Windows: https://chesslens.org/download/windows
+- All releases: https://github.com/jmbuss/chess-lens-releases/releases
+
+---
+
+## How It Works (https://chesslens.org/how-it-works)
+
+Three steps to better chess.
+
+Step 1 — Connect your Chess.com account: Enter your Chess.com username. Chess Lens syncs your game history via the public API—no password required. Your games are stored locally on your machine and stay there.
+
+Step 2 — Run deep automated analysis: One click to analyze any game—or your entire library. Chess Lens uses Stockfish for objective evaluation and Maia for human-level predictions at ratings 1100–1900. Every move is classified and annotated. Runs on your hardware — free and offline.
+
+Step 3 — Find and fix your recurring patterns: After analysis, Chess Lens groups similar positions into recurring mistake patterns. See which types of positions cause you the most trouble, how often they appear, and drill into every game instance.
+
+---
+
+## About (https://chesslens.org/about)
+
+Built by a chess player, for chess players. Chess Lens is built by Jason Buss — a software engineer and chess enthusiast who got tired of existing tools not answering the questions that actually matter for improvement.
+
+The tools that exist are great for reviewing a single game in isolation. But they don't help you answer the bigger question: what patterns of mistakes am I actually repeating? Chess Lens was built to answer that question—by analyzing your entire game history, not just one game at a time.
+
+Chess Lens combines Stockfish's objective evaluation with Maia's human-level move prediction to give you a more complete picture: not just what you should have played, but how likely you were to find it—and what kinds of positions you consistently mishandle.
+
+---
+
+## vs Chess.com (https://chesslens.org/vs/chess-com-analysis)
+
+Chess Lens vs Chess.com Game Review. Chess.com's game review shows you what went wrong in a single game. Chess Lens shows you what keeps going wrong across all of them.
+
+Chess Lens is a dedicated desktop workstation for deep study. Analyzes your entire history, finds recurring mistake patterns, and makes your games fully searchable—all running offline on your own hardware with no usage limits.
+
+Chess.com Game Review is a solid browser-based tool for reviewing individual games. Shows engine evaluations and recommends moves, but is limited to one game at a time, rate-limited for free accounts, and doesn't surface patterns across your history.
+
+---
+
+## vs ChessBase (https://chesslens.org/vs/chessbase)
+
+Chess Lens vs ChessBase. ChessBase is the professional standard for game preparation. Chess Lens is built for a different goal: automatically understanding your personal mistake patterns so you can improve faster.
+
+Chess Lens is free. ChessBase costs $200–$400+. Chess Lens runs on macOS and Windows; ChessBase is Windows-only. Chess Lens automatically detects recurring patterns; ChessBase requires manual tagging and setup. Chess Lens is designed for self-improvement; ChessBase is designed for professional preparation.
+
+---
+
+## vs Lichess (https://chesslens.org/vs/lichess-analysis)
+
+Chess Lens vs Lichess Analysis. Lichess is one of the best free chess platforms in the world. Chess Lens is designed to work alongside it—going deeper into your personal patterns in ways a web-based tool can't.
+
+Chess Lens runs analysis offline on your own hardware with no rate limits. Lichess uses cloud Stockfish that is rate-limited. Chess Lens includes Maia engines; Lichess does not. Chess Lens finds recurring patterns across your history; Lichess does not. Chess Lens has Chess.com sync; Lichess sync is on the roadmap for Chess Lens.

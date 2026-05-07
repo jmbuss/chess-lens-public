@@ -5,6 +5,64 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/releases/:path*",
+        "destination": "https://downloads.chesslens.org/:path*",
+        "type": 301
+      },
+      {
+        "source": "/download/mac",
+        "destination": "https://github.com/jmbuss/chess-lens-releases/releases/latest/download/ChessLens-mac.dmg",
+        "type": 302
+      },
+      {
+        "source": "/download/windows",
+        "destination": "https://github.com/jmbuss/chess-lens-releases/releases/latest/download/ChessLens-Setup.exe",
+        "type": 302
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(png|jpg|jpeg|webp|svg|ico|woff2)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      },
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=3600" },
+          { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+        ]
+      },
+      {
+        "source": "/robots.txt",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" }
+        ]
+      },
+      {
+        "source": "/llms.txt",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" },
+          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+        ]
+      },
+      {
+        "source": "/llms-full.txt",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" },
+          { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+        ]
+      }
     ]
   }
 }

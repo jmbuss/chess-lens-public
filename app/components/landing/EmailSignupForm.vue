@@ -10,7 +10,7 @@ function handleSubmit() {
   const { $posthog } = useNuxtApp()
   const ph = ($posthog as any)()
   ph?.identify(email.value, { email: email.value })
-  ph?.capture('waitlist_signup')
+  ph?.capture('updates_signup')
 
   status.value = 'success'
   email.value = ''
@@ -33,14 +33,14 @@ function handleSubmit() {
         size="lg"
         class="h-11 px-5 shrink-0 cursor-pointer"
       >
-        Get early access
+        Sign up for updates
         <ArrowRight class="size-4" />
       </Button>
     </form>
 
     <div v-else class="flex items-center gap-2 text-primary">
       <CheckCircle2 class="size-5" />
-      <span class="text-sm font-medium">You're on the list! We'll be in touch.</span>
+      <span class="text-sm font-medium">You're signed up for updates.</span>
     </div>
 
   </div>

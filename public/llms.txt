@@ -1,0 +1,30 @@
+# Chess Lens
+
+> Chess Lens is a free, local-first desktop chess analysis workstation for macOS and Windows. It uses Stockfish and Maia engines to surface recurring mistake patterns across your entire game history, make every game fully searchable, and help you understand how you actually play—not just what the best move was.
+
+## Download
+
+- [Download Chess Lens](https://chesslens.org/download): macOS (.dmg) and Windows (.exe) — free, no account required
+- [Download for macOS](https://chesslens.org/download/mac): Direct .dmg download (redirects to latest release)
+- [Download for Windows](https://chesslens.org/download/windows): Windows installer .exe (redirects to latest release)
+- [All releases on GitHub](https://github.com/jmbuss/chess-lens-releases/releases): Full release history and release notes
+
+## Key Pages
+
+- [Home](https://chesslens.org/): Marketing site and overview
+- [FAQ](https://chesslens.org/faq): Frequently asked questions — download, install, update, engines, privacy, features
+- [How It Works](https://chesslens.org/how-it-works): Three-step guide (Connect, Analyze, Improve)
+- [About](https://chesslens.org/about): Built by Jason Buss, software engineer and chess enthusiast
+- [vs Chess.com Game Review](https://chesslens.org/vs/chess-com-analysis): How Chess Lens compares to Chess.com analysis
+- [vs ChessBase](https://chesslens.org/vs/chessbase): How Chess Lens compares to ChessBase
+- [vs Lichess Analysis](https://chesslens.org/vs/lichess-analysis): How Chess Lens compares to Lichess
+
+## Key Facts
+
+- **Price**: Free
+- **Platforms**: macOS 10.15+ and Windows 10+ (64-bit)
+- **Engines**: Stockfish (objective evaluation) + Maia (human-level prediction, ratings 1100–1900)
+- **Data storage**: Local only — all games, analysis, and patterns stored on your machine
+- **Internet required**: Only for syncing games from Chess.com (analysis is fully offline)
+- **Game sync**: Chess.com (automatic); Lichess (coming soon)
+- **Contact**: bussterjason@gmail.com
