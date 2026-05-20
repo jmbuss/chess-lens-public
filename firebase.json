@@ -8,6 +8,11 @@
     ],
     "redirects": [
       {
+        "source": "/card",
+        "destination": "https://chesslens.org/?utm_source=qr&utm_medium=offline&utm_campaign=business_card",
+        "type": 302
+      },
+      {
         "source": "/releases/:path*",
         "destination": "https://downloads.chesslens.org/:path*",
         "type": 301
