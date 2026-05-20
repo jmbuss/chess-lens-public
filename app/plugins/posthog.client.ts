@@ -1,9 +1,7 @@
 import posthog from 'posthog-js'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(() => {
   const runtimeConfig = useRuntimeConfig()
-
-  console.log('runtimeConfig', runtimeConfig)
   if (!runtimeConfig.public.posthogPublicKey) return
 
   const posthogClient = posthog.init(runtimeConfig.public.posthogPublicKey as string, {
@@ -11,14 +9,14 @@ export default defineNuxtPlugin((nuxtApp) => {
     person_profiles: 'identified_only',
     capture_pageview: false,
     capture_pageleave: true,
-    loaded: (posthog) => {
-      if (import.meta.env.MODE === 'development') posthog.debug()
+    loaded: (client) => {
+      if (import.meta.env.MODE === 'development') client.debug()
     },
   })
 
   const router = useRouter()
   router.afterEach((to) => {
-    posthog.capture('$pageview', { path: to.fullPath })
+    posthogClient?.capture('$pageview', { path: to.fullPath })
   })
 
   return {
