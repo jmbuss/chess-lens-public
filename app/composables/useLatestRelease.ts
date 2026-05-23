@@ -4,9 +4,7 @@ export interface LatestRelease {
   version: string
   publishedAt: string
   htmlUrl: string
-  macUrl?: string
   macSizeBytes?: number
-  windowsUrl?: string
   windowsSizeBytes?: number
 }
 
@@ -41,9 +39,7 @@ export function useLatestRelease() {
           version: (r.tag_name as string | undefined)?.replace(/^v/, '') ?? '1.0',
           publishedAt: (r.published_at as string | undefined) ?? new Date().toISOString(),
           htmlUrl: (r.html_url as string | undefined) ?? `https://github.com/${GITHUB_RELEASES_REPO}/releases`,
-          macUrl: mac?.browser_download_url as string | undefined,
           macSizeBytes: mac?.size as number | undefined,
-          windowsUrl: win?.browser_download_url as string | undefined,
           windowsSizeBytes: win?.size as number | undefined,
         }
       }

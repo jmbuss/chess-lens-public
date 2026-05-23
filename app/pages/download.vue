@@ -94,7 +94,7 @@ useSchemaOrg([
             </div>
 
             <a
-              :href="release?.macUrl ?? '/download/mac'"
+              href="/download/mac"
               class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               <PlatformBrandIcon platform="apple" class="size-4" />
@@ -121,7 +121,7 @@ useSchemaOrg([
             </div>
 
             <a
-              :href="release?.windowsUrl ?? '/download/windows'"
+              href="/download/windows"
               class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-black/10 bg-black/[0.03] text-foreground font-semibold text-sm hover:bg-black/[0.06] transition-colors"
             >
               <PlatformBrandIcon platform="windows" class="size-4" />
